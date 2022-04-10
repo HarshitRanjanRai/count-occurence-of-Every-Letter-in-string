@@ -1,0 +1,59 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	char arr[100];
+	int count=0,flag=0;
+	scanf("%s",arr);
+	int n=strlen(arr);
+	
+
+	for(int i=0;i<n;i++)
+	{
+		count=1;
+		for(int j=i+1;j<n;j++)
+		{
+			if(arr[i]==arr[j])
+			{
+			
+			count++;
+			arr[j]='\0';
+		}
+		}
+	if(arr[i]=='\0')
+	{
+	}
+	else
+	printf("%c %d\n",arr[i],count);
+	}
+	
+}#include<stdio.h>
+#include<string.h>
+main()
+{
+	char arr[100];
+	int count=0,flag=0;
+	scanf("%s",arr);
+	int n=strlen(arr);
+	
+
+	for(int i=0;i<n;i++)
+	{
+		count=1;
+		for(int j=i+1;j<n;j++)
+		{
+			if(arr[i]==arr[j])
+			{
+			
+			count++;
+			arr[j]='\0';
+		}
+		}
+	if(arr[i]=='\0')
+	{
+	}
+	else
+	printf("%c %d\n",arr[i],count);
+	}
+	
+}
